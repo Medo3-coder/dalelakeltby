@@ -1,0 +1,32 @@
+{
+    "1": {
+        "store_id":2,
+        "product_category_id":1,
+        "discount_price" : "100",
+        "name": {
+            "ar":"بيج ماك ساندويتش",
+            "en":"Big mac sandwich"
+        },
+        "image": "image.png",
+        "desc": {
+            "ar":"بيج ماك ساندويتش بيج ماك ساندويتش",
+            "en":"Big mac sandwich Big mac sandwich"
+        },
+        "type" : "simple"
+    },
+    "2": {
+        "store_id":2,
+        "product_category_id":2,
+        "discount_price" : "150",
+        "name": {
+            "ar":"2بيج ماك ساندويتش",
+            "en":"Big mac sandwich 2"
+        },
+        "image": "image2.png",
+        "desc": {
+            "ar":"2بيج ماك ساندويتش بيج ماك ساندويتش",
+            "en":"Big mac sandwich Big mac sandwich2"
+        },
+        "type" : "multiple"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "1": {
+        "name": {
+            "ar":"صغير",
+            "en":"small",
+            "kur":"بچووک"
+
+        },
+        "feature_id":1
+    },
+    "2": {
+        "name": {
+            "ar":"متوسط",
+            "en":"medium",
+            "kur":"ناوەند"
+        },
+        "feature_id":1
+    },
+    "3": {
+        "name": {
+            "ar":"كبير",
+            "en":"Large",
+            "kur":"گەورە"
+        },
+        "feature_id":1
+    }
+}

@@ -1,0 +1,13 @@
+patient_accept_order_notification  => reservation_id
+
+patient_doctor_finish_reservation_notification => reservation_id
+
+patient_refuse_order_notification  => reservation_id
+
+patient_doctor_reserve_lab  => reservation_id
+
+patient_medicine_next_time_notification  => reservation_id
+
+admin_notify => body_ar ,body_kur
+
+patient_enter_to_doctor_notification => reservation_id

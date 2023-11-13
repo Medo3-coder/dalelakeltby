@@ -1,0 +1,161 @@
+@extends('admin.layout.master')
+
+@section('css')
+    <link rel="stylesheet" type="text/css" href="{{asset('admin/app-assets/vendors/css/extensions/sweetalert2.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('admin/index_page.css')}}">
+@endsection
+
+@section('content')
+
+<x-admin.table 
+    datefilter="true" 
+    order="true" 
+    extrabuttons="true"
+    addbutton="{{ route('admin.pharmacies.create') }}" 
+    deletebutton="{{ route('admin.pharmacies.deleteAll') }}" 
+    :searchArray="[
+        'name' => [
+            'input_type' => 'text' , 
+            'input_name' => __('admin.name') , 
+        ] ,
+        'phone' => [
+            'input_type' => 'text' , 
+            'input_name' => __('admin.phone') , 
+        ] ,
+        'email' => [
+            'input_type' => 'text' , 
+            'input_name' => __('admin.email') , 
+        ] ,
+
+        'identity_number' => [
+            'input_type' => 'text' , 
+            'input_name' => __('admin.identity_number') , 
+        ] ,
+
+        'experience_years' => [
+            'input_type' => 'text' , 
+            'input_name' => __('admin.experience_years') , 
+        ] ,
+
+        'is_active' => [
+            'input_type' => 'select' , 
+            'rows'       => [
+              '1' => [
+                'name' => 'مفعل' , 
+                'id' => 1 , 
+              ],
+              '2' => [
+                'name' => 'غير مفعل' , 
+                'id' => 0 , 
+              ],
+            ] , 
+            'input_name' => __('admin.phone_activation_status') , 
+        ] ,
+ 
+        
+    ]" 
+>
+
+    <x-slot name="extrabuttonsdiv">
+        {{-- <a type="button" data-toggle="modal" data-target="#notify" class="btn bg-gradient-info mr-1 mb-1 waves-effect waves-light notify" data-id="all"><i class="feather icon-bell"></i> {{ __('admin.Send_notification') }}</a> --}}
+    </x-slot>
+
+    <x-slot name="tableContent">
+        <div class="table_content_append">
+            {{-- table content will appends here  --}}
+        </div>
+    </x-slot>
+</x-admin.table>
+
+
+    
+@endsection
+
+@section('js')
+
+    <script src="{{asset('admin/app-assets/vendors/js/extensions/sweetalert2.all.min.js')}}"></script>
+    <script src="{{asset('admin/app-assets/js/scripts/extensions/sweet-alerts.js')}}"></script>
+    @include('admin.shared.deleteAll')
+    @include('admin.shared.deleteOne')
+    @include('admin.shared.filter_js' , [ 'index_route' => url('admin/pharmacies/'.request()->segment(3))])
+    <script>
+        $(document).ready(function(){
+            $(document).on('click','.block_user',function(e){
+                e.preventDefault();
+                $.ajax({
+                    url: '{{url("admin/pharmacies/block")}}',
+                    method: 'post',
+                    data: { id : $(this).data('id')},
+                    dataType:'json',
+                    beforeSend: function(){
+                        $(this).html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>').attr('disable',true)
+                    },
+                    success: function(response){
+                        Swal.fire({
+                                    position: 'top-start',
+                                    type: 'success',
+                                    title: response.message,
+                                    showConfirmButton: false,
+                                    timer: 1500,
+                                    confirmButtonClass: 'btn btn-primary',
+                                    buttonsStyling: false,
+                                })
+                        setTimeout(function(){
+                            window.location.reload()
+                        }, 1000);
+                    },
+                });
+    
+            });
+        });
+    </script>
+
+
+<script>
+    $(document).on('click','.is_approved',function(){
+  var is_approved = $(this).data('name');
+  var url = $(this).data('url');
+ 
+  Swal.fire({
+        title: "{{__('هل تريد الاستمرار ؟')}}",
+        // text: "{{__('هل انت متأكد من تغير الحاله ')}}",
+        type: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: '{{awtTrans("تأكيد")}}',
+        confirmButtonClass: 'btn btn-primary',
+        cancelButtonText: '{{awtTrans("الغاء")}}',
+        cancelButtonClass: 'btn btn-danger ml-1',
+  }).then((result) => {
+    if (is_approved) { 
+      $.ajax({
+         method: 'POST',
+         url : url,
+         data: {
+            is_approved: is_approved,
+         },
+         success: function(data) {
+             console.log('admin');
+         if(is_approved == 'accepted')
+         {
+            is_approved = 'accepted';
+            window.location.reload();
+         }
+         else
+         {
+            is_approved = 'rejected';
+            window.location.reload();
+         }
+     
+        }
+      });
+    }
+  })
+
+  });
+
+
+</script>
+
+@endsection

@@ -1,0 +1,350 @@
+body {
+  direction: ltr;
+  text-align: left;
+}
+.main-inp-cont h6::before {
+  right: -10px;
+  left: unset;
+}
+.form__label .float__label {
+  left: 10px;
+  right: unset;
+}
+.default_input:focus + .float__label,
+.default_input:not(:placeholder-shown) + .float__label {
+  -webkit-transform: translateX(-150%);
+  transform: translateX(-150%);
+}
+textarea.default_input:focus + .float__label,
+textarea.default_input:not(:placeholder-shown) + .float__label {
+  -webkit-transform: translateX(-120%);
+  transform: translateX(-120%);
+}
+.fl-bt {
+  right: 10px;
+  left: unset;
+}
+.col-spe .fa-angle-left {
+  margin-left: 65px;
+  margin-right: 0;
+}
+.sidebar .close {
+  right: 10px;
+  left: unset;
+}
+.sidebar .links > li > a > .icon-co {
+  margin-right: 10px;
+  margin-left: 0;
+}
+.sidebar .links > li > a.active::after {
+  left: -20px;
+  right: unset;
+}
+.sidebar .links > li > a > .icon-right {
+  margin-left: auto;
+  margin-right: 0;
+}
+.sidebar .links .collapse-me.collapse-active {
+  padding-left: 15px !important;
+  padding-right: 0;
+}
+.sidebar .links .collapse-me .coll a.active-coll::after {
+  left: -10px;
+  right: unset;
+}
+.sidebar.active-side {
+  transform: translateX(-330px);
+  overflow: hidden;
+}
+/* Navbar */
+.navbar-me {
+  left: 0;
+  right: unset;
+  transform: translateX(300px);
+}
+.navbar-me .content form .input-g i {
+  right: 10px;
+  left: unset;
+}
+.navbar-me .left .not {
+  margin-right: 20px;
+  margin-left: 0;
+}
+.navbar-me .left .not .number {
+  left: -6px;
+  right: unset;
+}
+.navbar-me .left .account img {
+  margin-right: 10px;
+  margin-left: 0;
+}
+.main-sec {
+  transform: translateX(300px);
+}
+@media (max-width: 865px) {
+  .sidebar {
+    transform: translateX(-330px);
+  }
+}
+.box-left::after {
+  right: 50%;
+  left: unset;
+}
+.box-left img {
+  margin: 15px 30px 0 0px;
+}
+div.dataTables_wrapper div.dataTables_filter label .icon-s {
+  transform: translatex(-3px);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.table-btn-spe {
+  margin-left: auto;
+  margin-right: 0;
+}
+.trainer .right .course .info {
+  margin-right: 30px;
+  margin-left: 0;
+}
+@media screen and (max-width: 475px) {
+  .trainer .right .course .info {
+    margin-right: 0;
+  }
+}
+.trainer .left .bottom .item .info img {
+  margin-right: 10px;
+  margin-left: 0;
+}
+@media (max-width: 350px) {
+  .navbar-me .left .not {
+    margin-right: 10px;
+    margin-right: 0;
+  }
+}
+.inp-date-con .fa-calendar {
+  right: 7px;
+  left: unset;
+}
+.row-tab-m {
+  padding-left: 15px;
+  padding-right: 0;
+}
+.test-result-big .fa-book-open {
+  margin-right: 5px;
+  margin-left: 0;
+}
+.work-plus-icon {
+  margin-right: auto;
+  margin-left: 3px;
+}
+label.apload-img-reg {
+  padding-left: 6px;
+  padding-right: 0;
+}
+.add-photo {
+  right: 15px;
+  left: unset;
+}
+.special-tele::before {
+  right: -10px;
+  left: unset;
+}
+.close-modal button {
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
+.close-modal .close {
+  margin-right: 10px;
+  margin-left: 0;
+}
+.en-dir {
+  direction: rtl;
+  text-align: right;
+}
+.drop-down {
+  right: 15px;
+  left: unset;
+}
+.icon-co {
+  margin-right: 5px;
+  margin-left: 0;
+}
+.table1-spe tbody td {
+  border-right: 1px solid var(--main);
+  border-left: none;
+}
+.table1-spe tbody td:last-child {
+  border-right: none;
+}
+.table-btm tbody td {
+  border-right: none;
+}
+.card-spe-price {
+  margin-left: auto;
+  margin-right: 0;
+}
+.edit-spe {
+  right: -22px;
+  left: unset;
+}
+.delete-spe {
+  margin-left: auto;
+  margin-right: 0;
+}
+.flatpickr-calendar.static.open {
+  right: 0;
+}
+.work-plus-icon {
+  margin-left: auto;
+  margin-right: 3px;
+}
+.work-close-icon {
+  right: -22px;
+  left: unset;
+}
+@media (max-width: 750px) {
+  .work-close-icon {
+    right: 80px;
+    left: unset;
+  }
+}
+.plus-add00 {
+  margin-left: 0;
+  margin-right: auto;
+}
+.red-behind {
+  margin-right: 2%;
+  margin-left: 0;
+}
+.plus.counter-btn {
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.minus.counter-btn {
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.refuse-btn {
+  margin-left: auto;
+  margin-right: 0;
+}
+.name-card {
+  padding-left: 15px;
+  padding-right: 0;
+}
+.last-one-flex .test-result-big {
+  margin-left: 12px;
+  margin-right: 0;
+}
+
+.submit-3 {
+  margin-left: 20px;
+  margin-right: 0;
+}
+.select2-search {
+  right: 0;
+  left: unset;
+}
+.date-inp3 {
+  right: 19px !important;
+  left: unset !important;
+}
+.inp-date-con10 .fa-clock {
+  right: 15px;
+  left: unset;
+}
+.rright-grid1 {
+  border-right: 1px solid #595858;
+  border-left: none;
+}
+.opinion-flex {
+  padding-right: 20px;
+  padding-left: 0;
+}
+@media (max-width: 1100px) {
+  .rright-grid1 {
+    border-right: none;
+  }
+}
+.first-flex1-middle {
+  margin-left: 75px;
+  margin-right: 0;
+}
+.ticket-table th:first-child {
+  border-left: none !important;
+}
+.ticket-table th:nth-child(2) {
+  border-right: none !important;
+}
+.ticket-table td:first-child {
+  border-right: 1px solid var(--main);
+  border-left: none;
+}
+
+@media (max-width: 800px) {
+  .remove-defi,
+  .add-defi {
+    margin-left: 20px;
+    margin-right: 0;
+  }
+}
+.flex-li div:first-child {
+  border-right: 1px solid #fff;
+  border-left: none;
+}
+input.apload-img-reg {
+  padding-left: 6px;
+  padding-right: 0;
+}
+.apload-title2 {
+  left: 10px;
+  right: unset;
+}
+.add-photo .fa-clock {
+  right: 20px;
+  left: unset;
+}
+select {
+  background-position-x: 98%;
+}
+.work-plus-icon2 {
+  margin-left: auto;
+  margin-right: 3px;
+}
+.work-date-content .add-photo {
+  right: 25px !important;
+  left: unset !important;
+}
+.work-plus-icon22 {
+  margin-left: auto;
+
+  margin-right: 3px;
+}
+.dafult-blue-btn {
+  margin-left: auto;
+
+  margin-right: 3px;
+}
+img.ro-img-spe {
+  right: 0;
+  left: unset;
+}
+/*new*/
+.top-def {
+  right: 4px;
+  left: unset;
+}
+.my-drop-now {
+  left: -15px;
+  right: unset;
+}
+/* set default */
+.fa-angle-left{
+    transform: rotate(180deg);
+}

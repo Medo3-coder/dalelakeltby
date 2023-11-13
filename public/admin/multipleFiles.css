@@ -1,0 +1,44 @@
+
+        .files_uploader_element{
+            height: 100px;
+            position: relative;
+            display: inline-block;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 2px 5px;
+        }
+        .files_uploader_element div{
+            height: 100%;
+        }
+        .files_uploader_element img{
+            height: 100%;
+        }
+
+        .files_uploader_delete_file{
+            position: absolute;
+            z-index: 3;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: #00000055;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            transition: all .2s ease-in-out;
+            color: #ffffff09;
+        }
+
+        .files_uploader_delete_file:hover {
+            backdrop-filter: blur(10px);
+            cursor: pointer;
+            color: #ff4444;
+        }
+
+        .element_text{
+            display: flex;
+            align-items: center;
+            padding: 10px 20px
+        }
+    

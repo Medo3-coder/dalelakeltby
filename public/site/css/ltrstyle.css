@@ -1,0 +1,192 @@
+body {
+  direction: ltr;
+  text-align: left;
+}
+.header {
+  left: 0;
+  right: unset;
+}
+.logins a.first-log {
+  margin-left: 0px;
+  margin-right: 10px;
+}
+.logins a {
+  margin-right: 10px;
+  margin-left: 0;
+}
+.header-noti::before {
+  right: unset;
+  left: 0;
+}
+.drop-down-lang {
+  right: unset;
+  left: 40px;
+}
+.best-box .fa-arrow-left-long {
+  margin-right: 0;
+  margin-left: 4px;
+}
+.right-sec form .input-co .check-ic {
+  right: 10px;
+  left: unset;
+}
+.left-sec::after {
+  right: 0;
+  left: unset;
+  clip-path: circle(100% at 100% 0%);
+
+}
+.left-sec .content2 .head::after {
+  left: -14px;
+  right: unset;
+  border-radius: 30px 0px 0 0;
+}
+.inp-spe {
+  width: 100%;
+  padding-left: 100px !important;
+  padding-right: 10px !important;
+  padding: 16px;
+}
+.setting .iti.iti--allow-dropdown .iti__flag-container {
+  left: 0;
+  right: unset;
+}
+.setting .iti.iti--allow-dropdown #telephone {
+  padding-left: 100px !important;
+  padding-right: 10px !important;
+}
+.iti--separate-dial-code .iti__selected-dial-code {
+  margin-left: 6px;
+  margin-right: 0;
+  color: #989898;
+}
+.setting .iti__arrow {
+  margin-left: 6px;
+  margin-right: 0px;
+}
+.iti__arrow.iti__arrow--up {
+  margin-right: 0px;
+}
+.iti--allow-dropdown .iti__flag-container,
+.iti--separate-dial-code .iti__flag-container {
+  left: 0;
+  right: unset;
+}
+.form__label .float__label {
+  right: unset;
+  left: 10px;
+}
+.default_input:focus + .float__label,
+.default_input:not(:placeholder-shown) + .float__label {
+  -webkit-transform: translateX(-150%);
+  transform: translateX(-150%);
+}
+textarea.default_input:focus + .float__label,
+textarea.default_input:not(:placeholder-shown) + .float__label {
+  -webkit-transform: translateX(-120%);
+  transform: translateX(-120%);
+}
+.step-title {
+  margin-right: 10px;
+  margin-left: 0;
+}
+.img-edit {
+  right: -25px;
+  left: unset;
+}
+.main-inp-cont h6::before {
+  right: -10px;
+  left: unset;
+}
+label.apload-img-reg {
+  padding-right: 0;
+  padding-left: 6px;
+}
+.add-photo {
+  right: 15px;
+  left: unset;
+}
+.uploaded__area .file_ .remove_media {
+  left: 4px;
+  right: unset;
+}
+.tab-img {
+  transform: rotate(180deg);
+}
+.special-tele::before {
+  right: -10px;
+  left: unset;
+}
+.flatpickr-calendar.static.open {
+  right: 0;
+  left: unset;
+}
+.work-plus-icon {
+  margin-left: auto;
+  margin-right: 3px;
+}
+.work-close-icon {
+  right: -35px;
+  left: unset;
+}
+.wizard li:after {
+  right: 46%;
+  left: unset;
+}
+.work-plus-icon2 .plus-add2 {
+  margin-left: 0px;
+  margin-right: 3px;
+}
+@media (max-width: 1024px) {
+  .work-close-icon {
+    right: -35px;
+    left: unset;
+  }
+  .flex-logins {
+    right: unset;
+    left: 0px;
+    transform: translateX(-100%);
+  }
+  .nav-layer {
+    left: 250px;
+    right: unset;
+    transform: translateX(-550%);
+  }
+  .bars span {
+    right: 0;
+    left: unset;
+  }
+}
+@media (max-width: 750px) {
+  .work-close-icon {
+    right: 80px;
+    left: unset;
+  }
+}
+[type="email"],
+[type="number"],
+[type="tel"],
+[type="url"] {
+  direction: ltr;
+}
+.best-box-right::after {
+  left: 15px;
+  right: unset;
+
+  clip-path: circle(100% at 0% 0%);
+}
+.add-photo .fa-clock {
+  right: 20px;
+  left: unset;
+}
+select {
+  background-position-x: 99%;
+
+}
+.left-sec{
+  background-position: right;
+  background-image: url(../imgs/doctor-presenting-something-.png);
+}
+.best-box .fa-arrow-left-long{
+  transform: rotate(180deg);
+}

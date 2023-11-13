@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'home'               => 'home',
+    'who_us'             => 'who we are',
+    'our_services'       => 'our services',
+    'who_we_work'        => 'how we work',
+    'faq'                => 'frequently asked questions',
+    'contact_us'         => 'contact us',
+    'quiek_links'        => 'Quick Links',
+    'info_about'         => 'About',
+    'how_work'           => 'how it works',
+    'fqs'                => 'FAQ',
+    'partners'           => 'success clients',
+    'contact_us'         => 'contact us',
+    'message_sent'       => 'The message was sent successfully',
+    'regsteras_provider' => 'Register as a service provider',
+    'receives'           => 'All rights reserved',
+    'site'               => 'site',
+    'register_page'      => 'Registration',
+    'privacy'            => 'privacy policy',
+    ''                   => '',
+    ''                   => '',
+    ''                   => '',
+];
